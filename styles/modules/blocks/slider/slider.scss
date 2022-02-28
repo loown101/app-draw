@@ -1,0 +1,37 @@
+.slider {
+  &__container-btn {
+    display: none;
+
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: transparent;
+    background-image: url(.././images/Ellipse.jpg);
+    background-repeat: no-repeat;
+
+    border: none;
+  }
+
+  &__button:nth-child(n) {
+    margin-right: 4px;
+  }
+
+  &__button_active {
+    background-image: url(.././images/Ellipse_active.jpg);
+  }
+
+  @include _480 {
+    &__container-btn {
+      display: block;
+    }
+  }
+}

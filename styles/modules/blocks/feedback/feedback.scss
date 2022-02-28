@@ -1,0 +1,209 @@
+.feedback {
+  &__form {
+    box-sizing: border-box;
+
+    display: grid;
+    justify-items: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'title title'
+    'subtitle subtitle'
+    'input-name input-email'
+    'textarea textarea'
+    'btn btn';
+
+    margin: 0;
+    padding: 60px;
+
+    max-width: 1110px;
+    width: 100%;
+
+    background-color: $blockBgColor;
+    border-radius: 10px;
+
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fontSizeSubtutle;
+    line-height: 119%;
+
+    color: $secondaryColor;
+
+    grid-area: title;
+
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSizeText;
+    line-height: 150%;
+    color: $secondaryColor;
+
+    opacity: .6;
+
+    grid-area: subtitle;
+
+    margin-bottom: 100px;
+  }
+
+  &__input {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 15px 20px;
+
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: $fontWeigthNormal;
+    font-size: $fontSizeText;
+    line-height: 150%;
+
+    color: $secondaryColor;
+
+    border: 1px solid $primaryColor;
+  }
+
+  &__input::placeholder {
+    opacity:  .3;
+  }
+
+  &__input:hover {
+    border: 1px solid #E4E4E4;
+     
+    border-radius: 8px;
+  }
+
+  &__label-name {
+    max-width: 470px;
+    width: 100%;
+
+    grid-area: input-name;
+    justify-self: flex-start;
+  }
+
+  &__label-email {
+    max-width: 470px;
+    width: 100%;
+
+    grid-area: input-email;
+    justify-self: flex-end;
+  }
+
+  &__textarea {
+    resize:none;
+
+    min-height: 130px;
+
+    margin-bottom: 30px;
+
+    grid-area: textarea;
+  }
+
+  &__btn {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 15px 30px;
+
+    background-color: $primaryBgColor;
+    border: none;
+    border-radius: 8px;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fontSizeText;
+    line-height: 150%;
+
+    color: $primaryColor;
+
+    grid-area: btn;
+    justify-self: flex-end;
+
+    transition: 0.35s linear;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+
+    opacity: .85;
+
+    transform: scale(1.01);
+  }
+
+  @include _1420 {
+    &__form {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'title'
+      'subtitle'
+      'input-name'
+      'input-email'
+      'textarea'
+      'btn';
+
+      padding: 30px 120px;
+    }
+
+    &__label-name {
+      max-width: 100%;
+
+      justify-self: center;
+    }
+  
+    &__label-email {
+      max-width: 100%;
+
+      justify-self: center;
+    }
+
+    &__title {
+      font-size: 26px;
+      text-align: center;
+
+      margin-bottom: 24px;
+    }
+  
+    &__subtitle {
+      font-size: 15px;
+    }
+
+    &__btn {
+      width: 100%;
+
+      justify-self: center;
+    }
+  }
+
+  @include _768 {
+    &__form {
+      padding: 30px;
+
+      margin-bottom: 70px;
+    }
+  }
+
+}

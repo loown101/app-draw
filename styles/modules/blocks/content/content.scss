@@ -1,0 +1,19 @@
+.content {
+  box-sizing: border-box;
+
+  &:nth-child(n) {
+    padding: 0 11%;
+  }
+
+  @include _1420 {
+    &:nth-child(n) {
+      padding: 0 30px;
+    }
+  }
+
+  @include _480 {
+    &:nth-child(n) {
+      padding: 0;
+    }
+  }
+}
