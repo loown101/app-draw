@@ -132,8 +132,18 @@
 
       padding: 12px;
     }
-}
+  }
 
+  @include _992 {
+    &__container-text::after {
+      top: -80px;
+
+      max-width: 260px;
+      height: 430px;
+
+      background-size: contain;
+    }
+  }
 
   @include _768 {
     align-items: center;

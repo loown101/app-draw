@@ -29,9 +29,11 @@
     background-image: url(.././images/Ellipse_active.jpg);
   }
 
-  @include _480 {
+  @include _768 {
     &__container-btn {
       display: block;
+
+      margin-top: 10px;
     }
   }
 }

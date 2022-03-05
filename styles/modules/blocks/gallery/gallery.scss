@@ -22,6 +22,8 @@
   }
 
   @include _992 {
+    margin-bottom: 70px;
+
     &__list { 
       column-gap: 20px;
     }
@@ -34,28 +36,6 @@
   }
 
   @include _768 {
-    margin-bottom: 70px;
-
-    &__list {
-      display: flex;
-
-      column-gap: 15px;
-
-      transform: all ease-in;
-    }
-
-    &__item {
-      text-align: center;
-
-      border-radius: 30px;
-    }
-
-    &__pic {
-      max-width: 226px;
-    } 
-  }
-
-  @include _480 {
     &__slider {
       max-width: 260px;
       margin: 0 auto;
@@ -70,6 +50,13 @@
     &__list {
       column-gap: 0;
     }
+
+    &__item {
+      text-align: center;
+
+      border-radius: 30px;
+    }
+
 
     &__pic {
       min-width: 260px;
