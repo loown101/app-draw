@@ -88,9 +88,26 @@ sliders.forEach(elem => {
   items.forEach(item => {
     item.addEventListener('touchstart', sliderStart, false);
     item.addEventListener('touchmove', (event) => {
-      if (elem.offsetWidth <= 320) {
+      if (document.body.offsetWidth <= 767) {
         sliderMove(event, elem, list, items, btns)
       }
     }, false);
   });
+
+  btns.forEach((btn, index) => btn.addEventListener('click', () => {
+    count = index;
+
+    for (let i = 0; i < [...btns].length; i++) {
+      [...btns][i].classList.remove('slider__button_active');
+
+      if ([...btns][i].dataset.num == count + 1) {
+        [...btns][i].classList.add('slider__button_active');
+      }
+    }
+
+
+    rollSlider(elem, list)
+
+  }))
+
 })
