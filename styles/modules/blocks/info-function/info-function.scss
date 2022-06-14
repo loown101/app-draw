@@ -1,0 +1,170 @@
+.info-function {
+  &__slider {  
+    overflow: hidden;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+  }
+
+  &__item {
+    box-sizing: border-box;
+
+    max-width: 540px;
+    width: 100%;
+
+    min-height: 308px;
+
+    padding: 40px;
+
+    background-color: $blockBgColor;
+    border-radius: 20px;
+  }
+
+  &__item:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    min-height: 76px;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fontSizeSubtutle;
+    line-height: 119%;
+    
+    color: $secondaryColor;
+
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 111%;
+    color: $secondaryColor;
+
+    opacity: .6;
+
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSizeText;
+    line-height: 150%;
+    color: $secondaryColor;
+
+    opacity: .6;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fontSizeTitle;
+    line-height: 113%;
+    color: $secondaryColor;
+
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  @include _992 {
+    &__item {
+      min-width: 350px;
+      min-height: 284px;
+
+      padding: 30px;
+    }
+
+    &__item:nth-child(odd) {
+      margin-right: 10px;
+    }
+
+    &__heading {
+      font-size: 33px;
+
+      margin-left: 20px;
+      margin-top: 70px;
+      margin-bottom: 75px;
+    }
+
+    &__title {
+      font-size: 26px;
+
+      margin-bottom: 35px;
+    }
+  
+    &__subtitle {
+      font-size: 15px;
+
+      margin-bottom: 12px;
+    }
+  
+    &__text {
+      font-size: 15px;
+    }
+
+  } 
+
+  @include _768 {  
+    &__list {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      min-width: 300px;
+      width: 100%;
+
+      padding: 20px;
+    }
+
+    &__item:nth-child(n) {
+      margin-right: 0;
+    }
+  
+    &__heading {
+      font-size: 26px;
+    }
+ 
+      &__slider {
+      max-width: 300px;
+      margin: 0 auto;
+
+      border-radius: 40px;
+
+      overflow: hidden;
+    }
+
+    @include _320 {
+      &__heading {
+        max-width: 260px;
+        width: 100%;
+      }
+    }
+  }
+}

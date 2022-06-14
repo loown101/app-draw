@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+  <title>Презентация приложения "Каляка"</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <img src="./images/logo.svg" alt="Логотип." class="header__logo">
+    <div class="header__container-text">
+      <h1 class="header__title">Не умеете рисовать? Не беда!</h1>
+      <p class="header__subtitle">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
+    </div>
+    <button type="button" class="header__btn">Подробнее</button>
+  </header>
+
+  <main class="content">
+    <section class="info-function">
+      <div class="info-function__slider slider">
+        <ul class="info-function__list slider__list">
+          <li class="info-function__item slider__item">
+            <p class="info-function__subtitle">AI</p>
+            <h3 class="info-function__title">Умный интелект приложения</h3>
+            <p class="info-function__text">С помощью AI приложение анализирует картины мастеров и современных практиков
+              рисования,
+              и достраивает&nbsp;картину за вас.</p>
+          </li>
+          <li class="info-function__item slider__item">
+            <p class="info-function__subtitle">Ч/Б и Цвет</p>
+            <h3 class="info-function__title">Рисуйте в любом стиле</h3>
+            <p class="info-function__text">Будь то карандашная каляка-маляка или цветное произведение, приложение
+              поможет
+              в любой ситуации.</p>
+          </li>
+        </ul>
+        <div class="slider__container-btn">
+          <button type="button" class="slider__button slider__button_active" data-num="1"></button>
+          <button type="button" class="slider__button" data-num="2"></button>
+        </div>
+      </div>
+      <h2 class="info-function__heading">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.
+      </h2>
+    </section>
+
+    <section class="gallery" aria-label="Примеры рисунков в приложении.">
+      <div class="gallery__slider slider">
+        <ul class="gallery__list slider__list">
+          <li class="gallery__item slider__item">
+            <img src="./images/faceEx1.jpg" alt="Пример рисунка лица 1." class="gallery__pic">
+          </li>
+          <li class="gallery__item slider__item">
+            <img src="./images/faceEx2.jpg" alt="Пример рисунка лица 2." class="gallery__pic">
+          </li>
+          <li class="gallery__item slider__item">
+            <img src="./images/faceEx3.jpg" alt="Пример рисунка лица 3." class="gallery__pic">
+          </li>
+        </ul>
+        <div class="slider__container-btn">
+          <button type="button" class="slider__button slider__button_active" data-num="1"></button>
+          <button type="button" class="slider__button" data-num="2"></button>
+          <button type="button" class="slider__button" data-num="3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-function">
+      <div class="info-function__slider slider">
+        <ul class="info-function__list slider__list">
+          <li class="info-function__item slider__item">
+            <p class="info-function__subtitle">Быстро</p>
+            <h3 class="info-function__title">Проблем с рисованием&nbsp;— нет</h3>
+            <p class="info-function__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная
+              кисть и многие другие...</p>
+          </li>
+          <li class="info-function__item slider__item">
+            <p class="info-function__subtitle">Просто</p>
+            <h3 class="info-function__title">Нарисовали, преобразовали, сохранили</h3>
+            <p class="info-function__text">Раз, два, три, больше нечего тут рассказать.</p>
+          </li>
+        </ul>
+        <div class="slider__container-btn">
+          <button type="button" class="slider__button slider__button_active" data-num="1"></button>
+          <button type="button" class="slider__button" data-num="2"></button>
+        </div>
+      </div>
+      <h2 class="info-function__heading">Качайте приложение и улучшайте свои&nbsp;художества, а&nbsp;потом хвастайтесь
+        ими!
+      </h2>
+    </section>
+
+    <section class="feedback">
+      <form action="#" class="feedback__form" name="feedback-form">
+        <h2 class="feedback__title">Хотите нам что-то посоветовать?</h2>
+        <p class="feedback__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
+
+        <label for="input-name" class="feedback__label-name">
+          <input type="text" placeholder="Ваше Имя" class="feedback__input" id="input-name">
+        </label>
+
+        <label for="input-email" class="feedback__label-email">
+          <input type="email" placeholder="Контактный Email" class="feedback__input" id="input-email">
+        </label>
+
+        <textarea placeholder="Сообщение" class="feedback__input feedback__textarea"></textarea>
+
+        <button class="feedback__btn">Оставить заявку</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container-text">
+      <h2 class="footer__title">Хотите скачать приложение?</h2>
+      <p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
+    </div>
+    <button class="footer__btn" disabled>Уже скоро!</button>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
